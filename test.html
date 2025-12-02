@@ -1,0 +1,20 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>P Button Example</title>
+    </head>
+    <body>
+        <button id="myButton">Change Paragraph</button>
+        <p id="myParagraph">This is the original paragraph text.</p>
+
+        <script>
+            const button = document.getElementById("myButton");
+            const paragraph = document.getElementById("myParagraph");
+
+            button.addEventListener("click", function() {
+                paragraph.textContent = "The paragraph text has been changed!";
+                paragraph.style.color = "blue";
+            });
+        </script>
+    </body>
+    </html>
